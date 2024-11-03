@@ -1,0 +1,98 @@
+---
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import jsonData from "../data/spanish.json";
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+
+const {headerData, footerData} = jsonData;
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Centro Fisioterapeutico con enfoque en comunidad, donde la rehabilitación se realiza acorde a la patología y actividades de la vida diaria del/la usuario/a." />
+		<meta name="keywords" content="Fisioterapia, Fisioterapeuta, Osteopatia, rehabilitacion, Cali, Valle del Cauca, Buga ">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="flex-container">
+		<Header data={headerData}/>
+		<slot class="flex-grow"/>
+		<Footer data={footerData}/>
+	</body>
+</html>
+<style is:global>
+
+	@font-face {
+		font-family: 'Nomixa';
+		src: url('/fonts/Nomixa-Regular.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'Raleway';
+		src: url('/fonts/Raleway-Regular.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	:root {
+		/* New Variables */
+		--title-font: 'Nomixa';
+    	--normal-text-font: 'Raleway';
+    	--background-color: #ffffff; /* Existing background color, update if needed */
+
+		/* Corporate Colors*/ 
+		--crea-dark-blue: #003f88;
+		--crea-light-blue: #0593c0;
+		--crea-dark-white: #eef4ff;
+		--crea-orange: #fc8301;
+		--crea-black: #191919;
+	}
+	html {
+		font-family: sans-serif;
+		background: var(--background-color);
+	}
+
+	.flex-container {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh; /* Ensure the container takes up the full viewport height */
+	}
+
+	.flex-grow {
+		flex-grow: 1; /* Makes the main content area take up the remaining space */
+	}
+
+	/* Title Styles */
+	.title-font {
+		font-family: var(--title-font);
+	}
+
+	/* Normal Text Styles (already applied to html, but adding for clarity) */
+	.text-font {
+		font-family: var(--normal-text-font);
+	}
+
+	.blue-background {
+		background: var(--crea-light-blue);
+	}
+
+	.white-text {
+		color: var(--crea-dark-white);
+	}
+
+	code {
+
+	}
+</style>

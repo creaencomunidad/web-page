@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "title": "C.Re.A en comunidad",
+    "description": "Centro Fisioterapeutico con enfoque en comunidad, donde la rehabilitación se realiza acorde a la patología y actividades de la vida diaria del/la usuario/a.",
+    "lang": "es",
+    "charset": "UTF-8",
+    "ldJson": {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "C.Re.A en comunidad",
+      "description": "Centro Fisioterapéutico con enfoque en comunidad, donde la rehabilitación se realiza acorde a la patología y actividades de la vida diaria del/la usuario/a.",
+      "url": "https://www.creaencomunidad.com/",
+      "logo": "./public/favicon.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "creaencomunidadcol@gmail.com",
+        "contactType": "Client Service"
+      },
+      "sameAs": [
+        "https://www.facebook.com/CREAencomunidad/",
+        "https://www.instagram.com/creaencomunidad",
+        "https://www.tiktok.com/@creaencomunidad"
+      ]
+    }
+  },
+
+  "headerData": {
+    "logoPath": "/BLogo.png",
+    "alt": "C.Re.A Logo",
+    "sections": [
+      { "label": "Quienes somos", "href": "#quienes-somos" },
+      { "label": "Servicios", "href": "#servicios" },
+      { "label": "Hablemos", "href": "#hablemos" },
+      { "label": "Donde encontrarnos", "href": "#ubicacion" }
+    ]
+  },
+
+  "heroData": {
+    "title": "Centro de Rehabilitacion Aplicada",
+    "subTitle": "Rehabilitación acorde a la patología y actividades de la vida diaria del/la usuario/a.",
+    "primaryCta": "Quienes somos",
+    "secondaryCta": "Contacto",
+    "highlightedTitle": "en comunidad"
+  },
+
+  "locationData": {
+    "title": "Ubicación"
+  },
+
+  "contactData": {
+    "title": "Contacto"
+  },
+
+  "teamData": {
+    "title": "Equipo C.Re.A",
+    "teamMembers": [
+      {
+        "name": "Alejandro Grisales Holguín",
+        "img": "alejoPhoto.png",
+        "imageAlt": "Foto de Alejandro grisales",
+        "vc": [
+          {
+            "degree": "Doctorando en osteopatía",
+            "institution": "Escuela de osteopatía de Madrid sede México."
+          },
+          {
+            "degree": "Master en osteopatía",
+            "institution": "Escuela de osteopatía de Madrid sede México."
+          },
+          {
+            "degree": "Fisioterapeuta",
+            "institution": "IU Escuela Nacional del Deporte"
+          }
+        ]
+      }
+    ]
+  },
+
+  "servicesData": {
+    "title": "Servicios",
+    "services": [
+      {
+        "title": "Osteopatía",
+        "icon": "DevIcon",
+        "description": ""
+      },
+      {
+        "title": "Fisioterapia",
+        "icon": "PlanetIcon",
+        "description": ""
+      },
+      {
+        "title": "Talleres grupales ",
+        "icon": "FileIcon",
+        "description": ""
+      }
+    ]
+  },
+
+  "aboutData": {
+    "title": "Quienes somos.",
+    "aboutPieces": [
+      {
+        "title": "C.Re.A en comunidad",
+        "description": "Centro de Fisioterapia especializado en Osteopatía, especialidad en terapia manual que aunque el nombre hace alusión al tratamiento de los huesos con ella se pueden recuperar todo tipo de lesiones, dolores, patologías, desde una fractura, pasando por hernias discales, fibromialgias, hasta accidentes cerebro vasculares.",
+        "img": "whiteLogo.webp",
+        "imageAlt": "C.Re.A logo blanco",
+        "checks": []
+      }
+    ]
+  },
+
+  "footerData": {
+    "socials": [
+      {
+        "alt": "WhatsappIcon",
+        "href": "https://api.whatsapp.com/send?phone=573167813601&text=Hola",
+        "label": "+57 3167813601"
+      },
+      {
+        "alt": "InstagramIcon",
+        "href": "https://www.instagram.com/creaencomunidad",
+        "label": "creaencomunidad"
+      },
+      {
+        "alt": "TiktokIcon",
+        "href": "https://www.tiktok.com/@creaencomunidad",
+        "label": "creaencomunidad"
+      },
+      {
+        "alt": "FacebookIcon",
+        "href": "https://www.facebook.com/CREAencomunidad/",
+        "label": "creaencomunidad"
+      }
+    ]
+  }
+}
