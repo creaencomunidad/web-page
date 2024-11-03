@@ -1,0 +1,19 @@
+{
+  "name": "web-page",
+  "version": "0.0.1",
+  "description": "- Setup git config (local)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@astrojs/react": "^3.6.2",
+    "astro": "^4.16.8"
+  }
+}

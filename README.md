@@ -11,5 +11,6 @@ git config --local user.email "example@example.com"
 ```
 npm init -y
 
-npm install astro typescript @types/astro @types/react @types/react-dom vite @vitejs/plugin-vite @vitejs/plugin-vite-react astro-plugin-vite astro-plugin-typescript --save-dev
+npm install astro
+npm install @astrojs/react
 ```
