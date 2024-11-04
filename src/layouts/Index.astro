@@ -1,6 +1,6 @@
 ---
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Header from '../sections/Header';
+import Footer from '../sections/Footer';
 import jsonData from "../data/spanish.json";
 
 interface Props {
@@ -90,6 +90,14 @@ const {headerData, footerData} = jsonData;
 
 	.white-text {
 		color: var(--crea-dark-white);
+	}
+
+	.black-text {
+		color: var(--crea-black);
+	}
+
+	.crea-dark-blue-text {
+		color: var(--crea-dark-blue);
 	}
 
 	code {

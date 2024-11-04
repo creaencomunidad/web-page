@@ -47,7 +47,35 @@
   },
 
   "contactData": {
-    "title": "Contacto"
+    "title": "¡Hablemos un rato!",
+    "text": "Agenda una consulta con nuestros expertos y descubre cómo podemos ayudarte a mejorar tu bienestar y calidad de vida.",
+    "boldText": "Estamos aquí para ofrecerte el apoyo y tratamiento que necesitas.",
+    "schedule": [
+      { "day": "Lunes a viernes", "openHours": "8:00 am - 6:00 pm" },
+      { "day": "Sábados", "openHours": "8:00 am - 1:00 pm" }
+    ],
+    "socials": [
+      {
+        "socialIcon": "WhatsappIcon",
+        "label": "+57 316 781 3601",
+        "href": "#"
+      },
+      {
+        "socialIcon": "EmailIcon",
+        "label": "creaencomunidadcol@gmail.com",
+        "href": "#"
+      }
+    ],
+    "contactProfile": {
+      "imgPath": "/assets/contactPerson.png",
+      "socials": [
+        { "socialIcon": "TiktokIcon", "href": "#", "label": "" },
+        { "socialIcon": "FacebookIcon", "href": "#", "label": "" },
+        { "socialIcon": "InstagramIcon", "href": "#", "label": "" }
+      ],
+      "buttonText": "¡Siguenos en redes!",
+      "buttonHref": "#"
+    }
   },
 
   "teamData": {
@@ -55,19 +83,21 @@
     "teamMembers": [
       {
         "name": "Alejandro Grisales Holguín",
-        "img": "alejoPhoto.png",
-        "imageAlt": "Foto de Alejandro grisales",
+        "imgNamePath": "/assets/alejoName.png",
+        "imgPath": "/assets/teamAlejo.png",
+        "imageAlt": "Foto de Alejandro",
+        "position": "boss",
         "vc": [
           {
-            "degree": "Doctorando en osteopatía",
+            "achivement": "Doctorando en osteopatía",
             "institution": "Escuela de osteopatía de Madrid sede México."
           },
           {
-            "degree": "Master en osteopatía",
+            "achivement": "Master en osteopatía",
             "institution": "Escuela de osteopatía de Madrid sede México."
           },
           {
-            "degree": "Fisioterapeuta",
+            "achivement": "Fisioterapeuta",
             "institution": "IU Escuela Nacional del Deporte"
           }
         ]
@@ -79,32 +109,28 @@
     "title": "Servicios",
     "services": [
       {
-        "title": "Osteopatía",
-        "icon": "DevIcon",
-        "description": ""
+        "title": "Fisioterapia",
+        "imgPath": "/assets/ServiceFisio.png"
       },
       {
-        "title": "Fisioterapia",
-        "icon": "PlanetIcon",
-        "description": ""
+        "title": "Osteopatía",
+        "imgPath": "/assets/ServiceOsteo.png"
       },
       {
         "title": "Talleres grupales ",
-        "icon": "FileIcon",
-        "description": ""
+        "imgPath": "/assets/ServiceGroup.png"
       }
     ]
   },
 
   "aboutData": {
     "title": "Quienes somos.",
+    "description": "Somos C.Re.A en Comunidad, un Centro de Fisioterapia y Osteopatía. Nos enfocamos en la atención de modalidad Consulta Externa, ofreciendo servicios de fisioterapia y osteopatía.",
+    "imgPath": "/assets/aboutPerson.png",
     "aboutPieces": [
       {
-        "title": "C.Re.A en comunidad",
-        "description": "Centro de Fisioterapia especializado en Osteopatía, especialidad en terapia manual que aunque el nombre hace alusión al tratamiento de los huesos con ella se pueden recuperar todo tipo de lesiones, dolores, patologías, desde una fractura, pasando por hernias discales, fibromialgias, hasta accidentes cerebro vasculares.",
-        "img": "whiteLogo.webp",
-        "imageAlt": "C.Re.A logo blanco",
-        "checks": []
+        "title": "¿Osteopatía?",
+        "description": "Aunque el término osteopatía sugiere un enfoque en los huesos, esta especialidad de la terapia manual permite tratar una amplia variedad de lesiones y patologías, que incluyen desde fracturas y hernias discales hasta fibromialgia y secuelas de accidentes cerebrovasculares."
       }
     ]
   },

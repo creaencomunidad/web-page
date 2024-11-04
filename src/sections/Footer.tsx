@@ -1,7 +1,7 @@
 // src/components/Header.tsx
 
 import React from "react";
-import Icons from "./Icons";
+import Icons from "../components/Icons";
 
 interface SocialLink {
   alt: string;

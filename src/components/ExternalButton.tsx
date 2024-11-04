@@ -1,7 +1,6 @@
 // src/components/Header.tsx
 
 import React from "react";
-import "./style.css";
 import Icons from "./Icons";
 
 interface ExternalButtonData {

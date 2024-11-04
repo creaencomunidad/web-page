@@ -1,0 +1,14 @@
+.hero-background {
+  background-image: url("/assets/heroBackground.png");
+  background-size: contain;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.team-background {
+  background-image: url("/assets/teamBackground.png");
+  background-size: contain;
+  width: 100%;
+}

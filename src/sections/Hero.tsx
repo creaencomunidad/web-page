@@ -2,7 +2,7 @@
 
 import React from "react";
 import "./style.css";
-import ExternalButton from "./ExternalButton";
+import ExternalButton from "../components/ExternalButton";
 
 interface HeroData {
   title: string;
@@ -40,7 +40,7 @@ const Hero: React.FC<HeroProps> = ({
         <ExternalButton data={{ label: buttonText, href: buttonHref }} />
       </div>
       <div>
-        <img src="/assets/heroPerson.png" alt="hero image" width="400px" />
+        <img src="/assets/heroPerson.png" alt="hero person" width="400px" />
       </div>
       {/* <span style={{ color: "red" }}>{title}</span> */}
     </div>
