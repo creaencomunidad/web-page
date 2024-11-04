@@ -36,11 +36,10 @@
   },
 
   "heroData": {
-    "title": "Centro de Rehabilitacion Aplicada",
-    "subTitle": "Rehabilitación acorde a la patología y actividades de la vida diaria del/la usuario/a.",
-    "primaryCta": "Quienes somos",
-    "secondaryCta": "Contacto",
-    "highlightedTitle": "en comunidad"
+    "title": "Centro de Rehabilitacion Aplicada en Comunidad",
+    "subTitle": "Rehabilitación personalizada según las necesidades y actividades diarias de cada persona.",
+    "buttonText": "Quienes somos",
+    "buttonHref": "#quienes-somos"
   },
 
   "locationData": {
