@@ -30,7 +30,7 @@
     "sections": [
       { "label": "Quienes somos", "href": "#quienes-somos" },
       { "label": "Servicios", "href": "#servicios" },
-      { "label": "Hablemos", "href": "#hablemos" },
+      { "label": "Hablemos", "href": "#contacto" },
       { "label": "Donde encontrarnos", "href": "#ubicacion" }
     ]
   },
@@ -42,40 +42,37 @@
     "buttonHref": "#quienes-somos"
   },
 
-  "locationData": {
-    "title": "Ubicación"
-  },
-
-  "contactData": {
-    "title": "¡Hablemos un rato!",
-    "text": "Agenda una consulta con nuestros expertos y descubre cómo podemos ayudarte a mejorar tu bienestar y calidad de vida.",
-    "boldText": "Estamos aquí para ofrecerte el apoyo y tratamiento que necesitas.",
-    "schedule": [
-      { "day": "Lunes a viernes", "openHours": "8:00 am - 6:00 pm" },
-      { "day": "Sábados", "openHours": "8:00 am - 1:00 pm" }
-    ],
-    "socials": [
+  "servicesData": {
+    "title": "Servicios",
+    "services": [
       {
-        "socialIcon": "WhatsappIcon",
-        "label": "+57 316 781 3601",
-        "href": "#"
+        "title": "Fisioterapia",
+        "imgPath": "/assets/ServiceFisio.png"
       },
       {
-        "socialIcon": "EmailIcon",
-        "label": "creaencomunidadcol@gmail.com",
-        "href": "#"
+        "title": "Osteopatía",
+        "imgPath": "/assets/ServiceOsteo.png"
+      },
+      {
+        "title": "Talleres grupales ",
+        "imgPath": "/assets/ServiceGroup.png"
       }
-    ],
-    "contactProfile": {
-      "imgPath": "/assets/contactPerson.png",
-      "socials": [
-        { "socialIcon": "TiktokIcon", "href": "#", "label": "" },
-        { "socialIcon": "FacebookIcon", "href": "#", "label": "" },
-        { "socialIcon": "InstagramIcon", "href": "#", "label": "" }
-      ],
-      "buttonText": "¡Siguenos en redes!",
-      "buttonHref": "#"
-    }
+    ]
+  },
+
+  "aboutData": {
+    "title": "Quienes somos.",
+    "description": "Somos C.Re.A en Comunidad, un Centro de Fisioterapia y Osteopatía. Nos enfocamos en la atención de modalidad Consulta Externa, ofreciendo servicios de fisioterapia y osteopatía.",
+    "imgPath": "/assets/aboutPerson.png",
+    "buttonText": "¡Contáctanos!",
+    "buttonIcon": "WhatsappIcon",
+    "buttonHref": "https://api.whatsapp.com/send?phone=573167813601&text=Bendecido%20día,%20soy%20",
+    "aboutPieces": [
+      {
+        "title": "¿Osteopatía?",
+        "description": "Aunque el término osteopatía sugiere un enfoque en los huesos, esta especialidad de la terapia manual permite tratar una amplia variedad de lesiones y patologías, que incluyen desde fracturas y hernias discales hasta fibromialgia y secuelas de accidentes cerebrovasculares."
+      }
+    ]
   },
 
   "teamData": {
@@ -105,32 +102,66 @@
     ]
   },
 
-  "servicesData": {
-    "title": "Servicios",
-    "services": [
+  "contactData": {
+    "title": "¡Hablemos un rato!",
+    "text": "Agenda una consulta con nuestros expertos y descubre cómo podemos ayudarte a mejorar tu bienestar y calidad de vida.",
+    "boldText": "Estamos aquí para ofrecerte el apoyo y tratamiento que necesitas.",
+    "schedule": [
+      { "day": "Lunes a viernes", "openHours": "8:00 am - 6:00 pm" },
+      { "day": "Sábados", "openHours": "8:00 am - 1:00 pm" }
+    ],
+    "socials": [
       {
-        "title": "Fisioterapia",
-        "imgPath": "/assets/ServiceFisio.png"
+        "socialIcon": "WhatsappIcon",
+        "label": "+57 316 781 3601",
+        "href": "https://api.whatsapp.com/send?phone=573167813601&text=Bendecido%20día,%20soy%20"
       },
       {
-        "title": "Osteopatía",
-        "imgPath": "/assets/ServiceOsteo.png"
-      },
-      {
-        "title": "Talleres grupales ",
-        "imgPath": "/assets/ServiceGroup.png"
+        "socialIcon": "EmailIcon",
+        "label": "creaencomunidadcol@gmail.com",
+        "href": ""
       }
-    ]
+    ],
+    "contactProfile": {
+      "imgPath": "/assets/contactPerson.png",
+      "socials": [
+        {
+          "socialIcon": "TiktokIcon",
+          "href": "https://www.tiktok.com/@creaencomunidad",
+          "label": ""
+        },
+        {
+          "socialIcon": "FacebookIcon",
+          "href": "https://www.facebook.com/CREAencomunidad/",
+          "label": ""
+        },
+        {
+          "socialIcon": "InstagramIcon",
+          "href": "https://www.instagram.com/creaencomunidad",
+          "label": ""
+        }
+      ],
+      "buttonText": "¡Siguenos en redes!",
+      "buttonHref": "https://linktr.ee/creaencomunidad?utm_source=qr_code"
+    }
   },
 
-  "aboutData": {
-    "title": "Quienes somos.",
-    "description": "Somos C.Re.A en Comunidad, un Centro de Fisioterapia y Osteopatía. Nos enfocamos en la atención de modalidad Consulta Externa, ofreciendo servicios de fisioterapia y osteopatía.",
-    "imgPath": "/assets/aboutPerson.png",
-    "aboutPieces": [
+  "locationData": {
+    "title": "¡Encuentra tu sede más cercana!",
+    "locations": [
       {
-        "title": "¿Osteopatía?",
-        "description": "Aunque el término osteopatía sugiere un enfoque en los huesos, esta especialidad de la terapia manual permite tratar una amplia variedad de lesiones y patologías, que incluyen desde fracturas y hernias discales hasta fibromialgia y secuelas de accidentes cerebrovasculares."
+        "city": "Buga",
+        "address": "Carrera 12 # 4-58",
+        "addressExtra": "",
+        "iframeLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.5901414834543!2d-76.30294812421377!3d3.8976497960761254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e39e643d751a5a5%3A0x4ae516c2f80f49a2!2sCra.%2012%20%234-58%2C%20Guadalajara%20de%20Buga%2C%20Valle%20del%20Cauca!5e0!3m2!1ses-419!2sco!4v1719604995777!5m2!1ses-419!2sco",
+        "urlLocation": "https://www.google.com/maps/place/Cra.+12+%234-58,+Guadalajara+de+Buga,+Valle+del+Cauca/@3.89765,-76.300373,15z/data=!4m6!3m5!1s0x8e39e643d751a5a5:0x4ae516c2f80f49a2!8m2!3d3.8976498!4d-76.3003732!16s%2Fg%2F11fpbkygw_?hl=es-419&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "city": "Cali",
+        "address": "Carrera 29a # 9-51",
+        "addressExtra": "Champagnat",
+        "iframeLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.6689449540554!2d-76.53785252421568!3d3.4305202965439947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a690e1dfbc6f%3A0xf93da59528ad74c!2sCra.%2029a%20%239-51%2C%20La%20Alameda%2C%20Cali%2C%20Valle%20del%20Cauca!5e0!3m2!1ses-419!2sco!4v1719604864027!5m2!1ses-419!2sco",
+        "urlLocation": "https://www.google.com/maps/place/Cra.+29a+%239-51,+La+Alameda,+Cali,+Valle+del+Cauca/@3.43052,-76.535278,15z/data=!4m6!3m5!1s0x8e30a690e1dfbc6f:0xf93da59528ad74c!8m2!3d3.4305203!4d-76.5352776!16s%2Fg%2F11tt6d0kcn?hl=es-419&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"
       }
     ]
   },
@@ -139,7 +170,7 @@
     "socials": [
       {
         "alt": "WhatsappIcon",
-        "href": "https://api.whatsapp.com/send?phone=573167813601&text=Hola",
+        "href": "https://api.whatsapp.com/send?phone=573167813601&text=Bendecido%20día,%20soy%20",
         "label": "+57 3167813601"
       },
       {

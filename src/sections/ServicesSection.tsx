@@ -2,7 +2,6 @@
 
 import React from "react";
 import "./style.css";
-import ExternalButton from "../components/ExternalButton";
 
 interface Services {
   title: string;
@@ -23,23 +22,28 @@ const ServicesSection: React.FC<ServicesProps> = ({
 }) => {
   return (
     <div
+      id="servicios"
       className="flex-col justify-center items-center"
-      style={{ margin: "35px 0px" }}
+      style={{ margin: "35px 0px", padding: "20px 20px 0px 20px" }}
     >
-      <div style={{ marginLeft: "20px" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
         <span
           className="title-font"
           style={{
             color: "var(--crea-light-blue)",
-            fontSize: "32px",
-            marginLeft: "15px",
+            fontSize: "48px",
           }}
         >
           {title}
         </span>
       </div>
 
-      <div className="flex row justify-evenly">
+      <div className="flex flex-row flex-wrap justify-evenly">
         {services.map((service, index) => {
           return (
             <div key={"service-" + index}>

@@ -13,6 +13,9 @@ interface AboutSectionData {
   title: string;
   description: string;
   imgPath: string;
+  buttonText: string;
+  buttonIcon: string;
+  buttonHref: string;
   aboutPieces: AboutPieces[];
 }
 
@@ -21,33 +24,45 @@ interface AboutSectionProps {
 }
 
 const AboutSection: React.FC<AboutSectionProps> = ({
-  data: { title, description, imgPath, aboutPieces },
+  data: {
+    title,
+    description,
+    imgPath,
+    buttonText,
+    buttonIcon,
+    buttonHref,
+    aboutPieces,
+  },
 }) => {
   return (
     <div
+      id="quienes-somos"
       className="flex-col justify-center items-center"
-      style={{ margin: "25px 0px 25px 0px", padding: "25px 0px" }}
+      style={{ margin: "25px 0px 25px 0px" }}
     >
-      <div className="flex row items-center justify-center">
+      <div className="flex flex-row flex-wrap items-center justify-center">
         <div
           style={{
             width: "500px",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            padding: "20px 20px 0px 20px",
           }}
         >
           <img src="/assets/aboutName.png" alt="about-name" width="500px" />
           <span
             className="text-font black-text text-center"
-            style={{ margin: "25px 0px", fontWeight: "bold", fontSize: "22px" }}
+            style={{ margin: "25px 0px", fontSize: "22px" }}
           >
             {description}
           </span>
-          <ExternalButton data={{ label: "¡Contáctanos!", href: "#" }} />
+          <ExternalButton
+            data={{ label: buttonText, href: buttonHref, icon: buttonIcon }}
+          />
         </div>
 
-        <div>
+        <div className="mt-10">
           <img src={imgPath} alt="about person img" width="400px" />
         </div>
       </div>
@@ -59,7 +74,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
             className=" flex flex-col items-center"
             style={{
               margin: "35px 0px 40px 0px",
-              padding: "35px 0px",
+              padding: "20px 20px 0px 20px",
               backgroundColor: "var(--crea-dark-white)",
             }}
           >

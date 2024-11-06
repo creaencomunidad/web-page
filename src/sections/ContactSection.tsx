@@ -39,10 +39,11 @@ const ContactSection: React.FC<ContactSectionProps> = ({
 }) => {
   return (
     <div
-      className="text-font black-text flex flex-row items-center justify-center"
+      id="contacto"
+      className="text-font black-text flex flex-row flex-wrap items-center justify-center"
       style={{
         margin: "0px 0px 25px 0px",
-
+        padding: "20px 20px 20px 20px",
         justifyContent: "space-evenly",
       }}
     >
@@ -64,12 +65,12 @@ const ContactSection: React.FC<ContactSectionProps> = ({
           style={{
             color: "var(--crea-light-blue)",
             fontWeight: "bold",
-            fontSize: "24px",
+            fontSize: "22px",
           }}
         >
           Horario
         </span>
-        <div className="flex flex-row">
+        <div className="flex flex-row" style={{ fontSize: "16px" }}>
           <div
             style={{ padding: "10px 20px 0px  0px", borderRight: "1px solid" }}
           >
@@ -87,7 +88,14 @@ const ContactSection: React.FC<ContactSectionProps> = ({
         {socials.map((social, index) => {
           return (
             <div key={"social-" + index} className="flex mb-3">
-              <Icons iconsName={social.socialIcon} />
+              <a
+                href={social.href}
+                target={social.href ? "_blank" : ""}
+                rel="noopener noreferrer external"
+                className="flex flex-row items-center"
+              >
+                <Icons iconsName={social.socialIcon} />
+              </a>
               <span style={{ paddingLeft: "10px" }}>{social.label}</span>
             </div>
           );
@@ -101,12 +109,35 @@ const ContactSection: React.FC<ContactSectionProps> = ({
             width="350px"
           />
         </div>
-        <div style={{ display: "flex", flexDirection: "row" }}>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            margin: "0px 0px 25px 0px",
+          }}
+        >
           {contactProfile.socials.map((social, index) => {
             return (
-              <div style={{ margin: "10px" }}>
+              <a
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer external"
+                key={"social-" + index}
+                style={{
+                  padding: "6px",
+                  borderRadius: "50%",
+                  backgroundColor: "var(--crea-dark-blue)",
+                  color: "white",
+                  width: "50px",
+                  height: "50px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  margin: "12px",
+                }}
+              >
                 <Icons iconsName={social.socialIcon} />
-              </div>
+              </a>
             );
           })}
         </div>

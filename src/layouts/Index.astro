@@ -19,22 +19,28 @@ const {headerData, footerData} = jsonData;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Centro Fisioterapeutico con enfoque en comunidad, donde la rehabilitación se realiza acorde a la patología y actividades de la vida diaria del/la usuario/a." />
 		<meta name="keywords" content="Fisioterapia, Fisioterapeuta, Osteopatia, rehabilitacion, Cali, Valle del Cauca, Buga ">
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Added initial-scale for proper zooming -->
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
 	<body class="flex-container">
-		<Header data={headerData}/>
-		<slot class="flex-grow"/>
-		<Footer data={footerData}/>
+		<header class="header-container"> <!-- Added a wrapper for header -->
+			<Header data={headerData}/>
+		</header>
+		<main class="main-content flex-grow"> <!-- Replaced slot with main and added class -->
+			<slot/>
+		</main>
+		<footer class="footer-container"> <!-- Added a wrapper for footer -->
+			<Footer data={footerData}/>
+		</footer>
 	</body>
 </html>
-<style is:global>
 
-	@font-face {
+<style is:global>
+		@font-face {
 		font-family: 'Nomixa';
-		src: url('/fonts/Nomixa-Bold.ttf') format('truetype');
+		src: url('/fonts/Nomixa-Regular.ttf') format('truetype');
 		font-weight: normal;
 		font-style: normal;
 	}
@@ -47,10 +53,9 @@ const {headerData, footerData} = jsonData;
 	}
 
 	:root {
-		/* New Variables */
 		--title-font: 'Nomixa';
     	--normal-text-font: 'Raleway';
-    	--background-color: #ffffff; /* Existing background color, update if needed */
+    	--background-color: #ffffff; 
 
 		/* Corporate Colors*/ 
 		--crea-dark-blue: #003f88;
@@ -59,19 +64,25 @@ const {headerData, footerData} = jsonData;
 		--crea-orange: #fc8301;
 		--crea-black: #191919;
 	}
+
 	html {
-		font-family: sans-serif;
+		font-family: var(--normal-text-font);
 		background: var(--background-color);
+		box-sizing: border-box; 
+	}
+
+	*,
+	*::before,
+	*::after {
+		box-sizing: inherit;
 	}
 
 	.flex-container {
 		display: flex;
 		flex-direction: column;
-		min-height: 100vh; /* Ensure the container takes up the full viewport height */
-	}
-
-	.flex-grow {
-		flex-grow: 1; /* Makes the main content area take up the remaining space */
+		min-height: 100vh;
+		padding: 0; /* Reset padding */
+		margin: 0; /* Reset margin */
 	}
 
 	/* Title Styles */
@@ -100,7 +111,55 @@ const {headerData, footerData} = jsonData;
 		color: var(--crea-dark-blue);
 	}
 
-	code {
+	.header-container,
+	.footer-container {
+		flex-shrink: 0; /* Ensure these don't shrink */
+	}
+
+	.header-container {
+		background-color: var(--crea-light-blue); /* Example background, adjust as needed */
+		color: var(--crea-dark-white); /* Example text color, adjust as needed */
+	}
+
+	.footer-container {
+		background-color: var(--crea-light-blue);
+		color: white;
+		padding: "4px 0px";
 
 	}
+
+	.main-content {
+		flex-grow: 1;
+		display: block; /* Ensure it's a block for content flow */
+				color: white;
+		font-size: 20px;
+		line-height: 1.6;
+
+	}
+
+	.footer-container {
+		background-color: var(--crea-light-blue); /* Example background, adjust as needed */
+		color: var(--crea-dark-white); /* Example text color, adjust as needed */
+		padding: 1rem; /* Added padding for content spacing */
+	}
+
+	/* Media Queries for Responsiveness */
+	/* @media (max-width: 768px) { 
+		.main-content {
+			padding: 1.5rem; 
+		}
+		.header-container,
+		.footer-container {
+			padding: 0.75rem; 
+		}
+	}
+
+	@media (max-width: 480px) { 
+		.main-content,
+		.header-container,
+		.footer-container {
+			padding: 0.5rem; 
+		}
+	} */
+
 </style>

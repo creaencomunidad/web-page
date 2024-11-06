@@ -39,8 +39,11 @@ const TeamSection: React.FC<TeamSectionProps> = ({
       {teamMembers.map((member, index) => {
         return (
           <div
-            className="team-background flex flex-row"
-            style={{ padding: "30px 0px", justifyContent: "space-evenly" }}
+            className="team-background flex flex-row flex-wrap "
+            style={{
+              padding: "20px 20px 20px 20px",
+              justifyContent: "space-evenly",
+            }}
             key={"teamMember-" + index}
           >
             <div>
@@ -62,7 +65,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({
                         {item.achivement}
                       </span>
                       <br />
-                      <span style={{ marginLeft: "15px" }}>
+                      <span style={{ marginLeft: "15px", fontSize: "15px" }}>
                         {item.institution}
                       </span>
                     </div>

@@ -20,11 +20,11 @@ interface FooterProps {
 const Footer: React.FC<FooterProps> = ({ data: { socials } }) => {
   return (
     <footer
-      className="blue-background text-white py-4"
-      style={{ maxHeight: "60px" }}
+      className="footer-container"
+      style={{ maxHeight: "60px", padding: "10px 0px" }}
     >
       <nav className="container mx-auto flex justify-center">
-        <ul className="flex items-center space-x-10">
+        <ul className="flex flex-wrap items-center space-x-10">
           {socials.map((item, index) => {
             return (
               <li key={"social-" + index}>
@@ -32,7 +32,16 @@ const Footer: React.FC<FooterProps> = ({ data: { socials } }) => {
                   href={item.href}
                   className="hover:text-gray-300 title-font white-text flex items-center"
                 >
-                  <Icons iconsName={item.alt} />
+                  <div
+                    style={{
+                      padding: "6px",
+                      borderRadius: "50%",
+                      backgroundColor: "white",
+                      color: "var(--crea-light-blue)",
+                    }}
+                  >
+                    <Icons iconsName={item.alt} />
+                  </div>
                   <span style={{ paddingLeft: "5px", fontSize: "20px" }}>
                     {item.label}
                   </span>

@@ -1,31 +1,28 @@
 ---
 import IndexLayout from '../layouts/Index.astro';
-import Hero from "../sections/Hero.tsx";
+import Hero from "../sections/HeroSection.tsx";
 import ServicesSection from "../sections/ServicesSection"
 import AboutSection from "../sections/AboutSection"
 import TeamSection from "../sections/TeamSection"
 import ContactSection from "../sections/ContactSection"
+import LocationSection from "../sections/LocationSection"
 
 import jsonData from "../data/spanish.json";
-const {heroData, servicesData, aboutData, teamData, contactData} = jsonData;
+const {heroData, servicesData, aboutData, teamData, contactData, locationData} = jsonData;
 ---
 
-<IndexLayout title="Welcome to Astro.">
-	<main>
+<IndexLayout title="C.Re.A en comunidad">
+
 		<Hero data={heroData}/>
 		<ServicesSection data={servicesData}/>
 		<AboutSection data={aboutData}/>
 		<TeamSection data={teamData} />
 		<ContactSection data={contactData} />
-	</main>
-</Layout>
+		<LocationSection data={locationData} />
+
+</IndexLayout>
 
 <style>
-	main {
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
 	.astro-a {
 		position: absolute;
 		top: -32px;
