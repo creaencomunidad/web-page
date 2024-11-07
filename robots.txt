@@ -1,0 +1,26 @@
+# Allow all search engines to access the site
+User-agent: *
+
+# Disallow search engines from indexing admin or internal sections
+Disallow: /admin/
+Disallow: /internal/
+Disallow: /private/
+
+# Prevent indexing of sensitive files or dynamically generated resources
+Disallow: /login
+Disallow: /register
+Disallow: /cart
+Disallow: /checkout
+Disallow: /wp-admin/            # For WordPress users, blocks admin
+Disallow: /cgi-bin/
+
+# Prevent indexing of query parameters (optional, for cleaner URLs in search results)
+Disallow: /*?*
+
+# Allow only specific content on certain pages (e.g., CSS, JS files)
+Allow: /*.css
+Allow: /*.js
+Allow: /images/
+
+# Sitemap location - helps search engines find all pages to index
+# Sitemap: https://www.example.com/sitemap.xml

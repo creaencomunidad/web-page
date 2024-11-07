@@ -1,14 +1,15 @@
 {
   "meta": {
     "title": "C.Re.A en comunidad",
-    "description": "Centro Fisioterapeutico con enfoque en comunidad, donde la rehabilitación se realiza acorde a la patología y actividades de la vida diaria del/la usuario/a.",
+    "description": "Centro de Rehabilitación Aplicada en Comunidad. Rehabilitación personalizada según las necesidades y actividades diarias de cada persona.",
+    "keywords": "Fisioterapia, Fisioterapeuta, Osteopatía, Rehabilitación, Cali, Valle del Cauca, Buga",
     "lang": "es",
     "charset": "UTF-8",
     "ldJson": {
       "@context": "http://schema.org",
       "@type": "Organization",
       "name": "C.Re.A en comunidad",
-      "description": "Centro Fisioterapéutico con enfoque en comunidad, donde la rehabilitación se realiza acorde a la patología y actividades de la vida diaria del/la usuario/a.",
+      "description": "Centro de Rehabilitación Aplicada en Comunidad. Rehabilitación personalizada según las necesidades y actividades diarias de cada persona.",
       "url": "https://www.creaencomunidad.com/",
       "logo": "./public/favicon.svg",
       "contactPoint": {
@@ -31,7 +32,8 @@
       { "label": "Quienes somos", "href": "#quienes-somos" },
       { "label": "Servicios", "href": "#servicios" },
       { "label": "Hablemos", "href": "#contacto" },
-      { "label": "Donde encontrarnos", "href": "#ubicacion" }
+      { "label": "Donde encontrarnos", "href": "#ubicacion" },
+      { "label": "Blog", "href": "https://blog.creaencomunidad.com" }
     ]
   },
 
@@ -47,15 +49,15 @@
     "services": [
       {
         "title": "Fisioterapia",
-        "imgPath": "/assets/ServiceFisio.png"
+        "imgPath": "/assets/ServiceFisio.webp"
       },
       {
         "title": "Osteopatía",
-        "imgPath": "/assets/ServiceOsteo.png"
+        "imgPath": "/assets/ServiceOsteo.webp"
       },
       {
         "title": "Talleres grupales ",
-        "imgPath": "/assets/ServiceGroup.png"
+        "imgPath": "/assets/ServiceGroup.webp"
       }
     ]
   },
@@ -63,7 +65,7 @@
   "aboutData": {
     "title": "Quienes somos.",
     "description": "Somos C.Re.A en Comunidad, un Centro de Fisioterapia y Osteopatía. Nos enfocamos en la atención de modalidad Consulta Externa, ofreciendo servicios de fisioterapia y osteopatía.",
-    "imgPath": "/assets/aboutPerson.png",
+    "imgPath": "/assets/aboutPerson.webp",
     "buttonText": "¡Contáctanos!",
     "buttonIcon": "WhatsappIcon",
     "buttonHref": "https://api.whatsapp.com/send?phone=573167813601&text=Bendecido%20día,%20soy%20",
@@ -80,8 +82,8 @@
     "teamMembers": [
       {
         "name": "Alejandro Grisales Holguín",
-        "imgNamePath": "/assets/alejoName.png",
-        "imgPath": "/assets/teamAlejo.png",
+        "imgNamePath": "/assets/alejoName.webp",
+        "imgPath": "/assets/teamAlejo.webp",
         "imageAlt": "Foto de Alejandro",
         "position": "boss",
         "vc": [
@@ -123,7 +125,7 @@
       }
     ],
     "contactProfile": {
-      "imgPath": "/assets/contactPerson.png",
+      "imgPath": "/assets/contactPerson.webp",
       "socials": [
         {
           "socialIcon": "TiktokIcon",

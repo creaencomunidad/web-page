@@ -52,7 +52,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({
         >
           <h2>
             <span style={{ display: "none" }}>About</span>
-            <img src="/assets/aboutName.png" alt="about-name" width="500px" />
+            <img src="/assets/aboutName.webp" alt="about-name" width="500px" />
           </h2>
           <p
             className="text-font black-text text-center"

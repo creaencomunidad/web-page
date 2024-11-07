@@ -9,33 +9,69 @@ interface Props {
 
 const { title } = Astro.props;
 
-const {headerData, footerData} = jsonData;
+const {headerData, footerData, meta} = jsonData;
 
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Centro Fisioterapeutico con enfoque en comunidad, donde la rehabilitación se realiza acorde a la patología y actividades de la vida diaria del/la usuario/a." />
-		<meta name="keywords" content="Fisioterapia, Fisioterapeuta, Osteopatia, rehabilitacion, Cali, Valle del Cauca, Buga ">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Added initial-scale for proper zooming -->
+		<meta name="description" content={meta.description} />
+		<meta name="keywords" content={meta.keywords} />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>{meta.title} - Centro de Fisioterapia en Cali y Buga</title>
+
+		<!-- Open Graph meta tags for better social sharing -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="{title} - Centro de Fisioterapia en Cali y Buga" />
+		<meta property="og:description" content={meta.description} />
+		<meta property="og:image" content="/path/to/your-image.jpg" />
+		<meta property="og:url" content="https://www.creaencomunidad.com" />
+
+		<!-- Twitter Card meta tags -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="{title} - Centro de Fisioterapia en Cali y Buga" />
+		<meta name="twitter:description" content={meta.description} />
+		<meta name="twitter:image" content="/path/to/your-image.jpg" />
+
+		<!-- Schema Markup JSON-LD -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "MedicalOrganization",
+			"name": "C.Re.A - Centro Fisioterapéutico",
+			"logo": "https://www.creaencomunidad.com/logo.png",
+			"url": "https://www.creaencomunidad.com",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "Cra. 29a #9-51",
+				"addressLocality": "Cali",
+				"addressRegion": "Valle del Cauca",
+				"postalCode": "472",
+				"addressCountry": "CO"
+			},
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"telephone": "+57 316 781 3601",
+				"contactType": "Customer Service"
+			}
+		}
+		</script>
 	</head>
 	<body class="flex-container">
+		<Header client:load data={headerData} />
 
-		<Header client:load data={headerData}/>
-
-		<main class="main-content flex-grow"> <!-- Replaced slot with main and added class -->
-			<slot/>
+		<main class="main-content flex-grow">
+			<slot />
 		</main>
 
-		<Footer data={footerData}/>
-
+		<Footer data={footerData} />
 	</body>
 </html>
+
 
 <style is:global>
 		@font-face {

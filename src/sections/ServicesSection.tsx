@@ -48,6 +48,7 @@ const ServicesSection: React.FC<ServicesProps> = ({
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "space-evenly",
+          marginTop: "10px",
         }}
       >
         {services.map((service, index) => (

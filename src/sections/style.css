@@ -1,5 +1,5 @@
 .hero-container {
-  background-image: url("/assets/heroBackground.png");
+  background-image: url("/assets/heroBackground.webp");
   background-size: cover;
   width: 100%;
   padding: 20px 20px 0px 20px;
@@ -62,7 +62,7 @@
 }
 
 .team-background {
-  background-image: url("/assets/teamBackground.png");
+  background-image: url("/assets/teamBackground.webp");
   background-size: cover;
   width: 100%;
 }

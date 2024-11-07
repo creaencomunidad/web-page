@@ -29,7 +29,7 @@ const Hero: React.FC<HeroProps> = ({
       </div>
       <div>
         <img
-          src="/assets/heroPerson.png"
+          src="/assets/heroPerson.webp"
           alt="hero person"
           width="400px"
           style={{ position: "relative", bottom: "-30px" }}
