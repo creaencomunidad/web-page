@@ -126,6 +126,11 @@ const {headerData, footerData} = jsonData;
 		color: white;
 		padding: "4px 0px";
 
+		.footer-social-label {
+			padding-left: 5px;
+			font-size: 20px;
+		}
+
 	}
 
 	.main-content {
@@ -144,22 +149,15 @@ const {headerData, footerData} = jsonData;
 	}
 
 	/* Media Queries for Responsiveness */
-	/* @media (max-width: 768px) { 
-		.main-content {
-			padding: 1.5rem; 
-		}
-		.header-container,
+	@media (max-width: 768px) { 
 		.footer-container {
-			padding: 0.75rem; 
+			.footer-social-label {
+				display: none;
+			}
+
 		}
 	}
 
-	@media (max-width: 480px) { 
-		.main-content,
-		.header-container,
-		.footer-container {
-			padding: 0.5rem; 
-		}
-	} */
+	
 
 </style>

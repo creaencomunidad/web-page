@@ -42,9 +42,7 @@ const Footer: React.FC<FooterProps> = ({ data: { socials } }) => {
                   >
                     <Icons iconsName={item.alt} />
                   </div>
-                  <span style={{ paddingLeft: "5px", fontSize: "20px" }}>
-                    {item.label}
-                  </span>
+                  <span className="footer-social-label">{item.label}</span>
                 </a>
               </li>
             );
