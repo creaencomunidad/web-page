@@ -19,10 +19,7 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ data: { socials } }) => {
   return (
-    <footer
-      className="footer-container"
-      style={{ maxHeight: "60px", padding: "10px 0px" }}
-    >
+    <footer className="footer-container" style={{ padding: "10px 0px" }}>
       <nav className="container mx-auto flex justify-center">
         <ul className="flex flex-wrap items-center space-x-10">
           {socials.map((item, index) => {

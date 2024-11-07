@@ -25,15 +25,15 @@ const {headerData, footerData} = jsonData;
 		<title>{title}</title>
 	</head>
 	<body class="flex-container">
-		<header class="header-container"> <!-- Added a wrapper for header -->
-			<Header data={headerData}/>
-		</header>
+
+		<Header client:load data={headerData}/>
+
 		<main class="main-content flex-grow"> <!-- Replaced slot with main and added class -->
 			<slot/>
 		</main>
-		<footer class="footer-container"> <!-- Added a wrapper for footer -->
-			<Footer data={footerData}/>
-		</footer>
+
+		<Footer data={footerData}/>
+
 	</body>
 </html>
 
@@ -116,15 +116,29 @@ const {headerData, footerData} = jsonData;
 		flex-shrink: 0; /* Ensure these don't shrink */
 	}
 
+	.offcanvas-container {
+		display: none
+	}
+
 	.header-container {
 		background-color: var(--crea-light-blue); /* Example background, adjust as needed */
 		color: var(--crea-dark-white); /* Example text color, adjust as needed */
+
+		height: 70px;
+
+		.header-nav {
+			justify-content: space-around;
+		}
+		.header-sections {
+			display:flex
+		}
 	}
 
 	.footer-container {
 		background-color: var(--crea-light-blue);
 		color: white;
 		padding: "4px 0px";
+		display: flex;
 
 		.footer-social-label {
 			padding-left: 5px;
@@ -146,15 +160,34 @@ const {headerData, footerData} = jsonData;
 		background-color: var(--crea-light-blue); /* Example background, adjust as needed */
 		color: var(--crea-dark-white); /* Example text color, adjust as needed */
 		padding: 1rem; /* Added padding for content spacing */
+
+		height: 70px;
 	}
 
 	/* Media Queries for Responsiveness */
-	@media (max-width: 768px) { 
+
+
+	@media (max-width: 1030px) { 
 		.footer-container {
 			.footer-social-label {
 				display: none;
 			}
+		}
+	}
 
+
+	@media (max-width: 768px) { 
+		.header-container {
+			.header-nav {
+			justify-content: space-between;
+		}
+			.header-sections {
+				display: none;
+			}
+		}
+
+		.offcanvas-container {
+			display: flex;
 		}
 	}
 

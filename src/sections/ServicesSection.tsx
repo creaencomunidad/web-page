@@ -43,18 +43,35 @@ const ServicesSection: React.FC<ServicesProps> = ({
         </span>
       </div>
 
-      <div className="flex flex-row flex-wrap justify-evenly">
-        {services.map((service, index) => {
-          return (
-            <div key={"service-" + index}>
-              <img
-                src={service.imgPath}
-                alt={"img-" + service.title}
-                width="370px"
-              />
-            </div>
-          );
-        })}
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-evenly",
+        }}
+      >
+        {services.map((service, index) => (
+          <div
+            key={"service-" + index}
+            className="responsive-image-container"
+            style={{
+              padding: "8px",
+              width: "100%",
+              maxWidth: "370px",
+              minWidth: "100px",
+              boxSizing: "border-box",
+            }}
+          >
+            <img
+              src={service.imgPath}
+              alt={"img-" + service.title}
+              style={{
+                width: "100%",
+                height: "auto",
+              }}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );
