@@ -50,13 +50,16 @@ const AboutSection: React.FC<AboutSectionProps> = ({
             padding: "20px 20px 0px 20px",
           }}
         >
-          <img src="/assets/aboutName.png" alt="about-name" width="500px" />
-          <span
+          <h2>
+            <span style={{ display: "none" }}>About</span>
+            <img src="/assets/aboutName.png" alt="about-name" width="500px" />
+          </h2>
+          <p
             className="text-font black-text text-center"
             style={{ margin: "25px 0px", fontSize: "22px" }}
           >
             {description}
-          </span>
+          </p>
           <ExternalButton
             data={{ label: buttonText, href: buttonHref, icon: buttonIcon }}
           />
@@ -78,12 +81,9 @@ const AboutSection: React.FC<AboutSectionProps> = ({
               backgroundColor: "var(--crea-dark-white)",
             }}
           >
-            <span
-              className="title-font black-text crea-dark-blue-text text-center"
-              style={{ fontSize: "36px" }}
-            >
+            <h3 className="title-font crea-dark-blue-text text-center">
               {piece.title}
-            </span>
+            </h3>
             <p
               className="text-font black-text crea-dark-blue-text"
               style={{ textAlign: "center", maxWidth: "680px" }}

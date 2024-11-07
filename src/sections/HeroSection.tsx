@@ -20,10 +20,9 @@ const Hero: React.FC<HeroProps> = ({
 }) => {
   return (
     <div className="hero-container">
-      {/* <img src="/assets/heroBackground.png" alt="hero-background" /> */}
-      <div className="hero-left" style={{}}>
-        <span className="title-font hero-title">{title}</span>
-        <span className="text-font">{subTitle}</span>
+      <div className="hero-left">
+        <h2 className="title-font">{title}</h2>
+        <p className="text-font">{subTitle}</p>
         <ExternalButton
           data={{ label: buttonText, href: buttonHref, internal: true }}
         />

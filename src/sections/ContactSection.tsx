@@ -48,16 +48,13 @@ const ContactSection: React.FC<ContactSectionProps> = ({
       }}
     >
       <div style={{ maxWidth: "520px", fontSize: "20px", margin: "10px" }}>
-        <span
-          className="title-font"
-          style={{ color: "var(--crea-orange)", fontSize: "42px" }}
-        >
+        <h2 className="title-font" style={{ color: "var(--crea-orange)" }}>
           {title}
-        </span>
+        </h2>
 
-        <p>{text}</p>
+        <p className="text-font">{text}</p>
         <br />
-        <p>
+        <p className="text-font">
           <b>{boldText}</b>
         </p>
         <br />
@@ -70,7 +67,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({
         >
           Horario
         </span>
-        <div className="flex flex-row" style={{ fontSize: "16px" }}>
+        <div className="flex flex-row text-font" style={{ fontSize: "16px" }}>
           <div
             style={{ padding: "10px 20px 0px  0px", borderRight: "1px solid" }}
           >

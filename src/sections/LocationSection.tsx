@@ -33,7 +33,7 @@ const LocationSection: React.FC<LocationSectionProps> = ({
       }}
     >
       <div className="location-title title-font">
-        <span>{title}</span>
+        <h2 className="title-font">{title}</h2>
       </div>
       <div className="crea-dark-blue-text text-font flex flex-row flex-wrap items-center justify-center">
         {locations.map((location, index) => {
@@ -71,9 +71,7 @@ const LocationSection: React.FC<LocationSectionProps> = ({
                   justifyContent: "center",
                 }}
               >
-                <span className="title-font location-city">
-                  {location.city}
-                </span>
+                <h3 className="title-font location-city">{location.city}</h3>
                 <span className="text-font location-address">
                   <b>{location.address}</b>
                 </span>

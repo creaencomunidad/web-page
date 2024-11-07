@@ -36,6 +36,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({
         justifyContent: "space-evenly",
       }}
     >
+      <h2 style={{ display: "none" }}>Team</h2>
       {teamMembers.map((member, index) => {
         return (
           <div
@@ -58,7 +59,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({
               <div className=" white-text text-font flex flex-col">
                 {member.vc.map((item, index) => {
                   return (
-                    <div key={"member-achivement-" + index}>
+                    <p key={"member-achivement-" + index}>
                       <br />
                       <span style={{ fontWeight: "bold", fontSize: "22px" }}>
                         {"  - "}
@@ -68,7 +69,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({
                       <span style={{ marginLeft: "15px", fontSize: "15px" }}>
                         {item.institution}
                       </span>
-                    </div>
+                    </p>
                   );
                 })}
               </div>

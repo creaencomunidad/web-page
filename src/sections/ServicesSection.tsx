@@ -32,15 +32,15 @@ const ServicesSection: React.FC<ServicesProps> = ({
           justifyContent: "center",
         }}
       >
-        <span
+        <h2
           className="title-font"
           style={{
             color: "var(--crea-light-blue)",
-            fontSize: "48px",
+            //fontSize: "48px",
           }}
         >
           {title}
-        </span>
+        </h2>
       </div>
 
       <div
