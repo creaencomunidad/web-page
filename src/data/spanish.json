@@ -1,195 +1,197 @@
 {
-  "meta": {
-    "title": "C.Re.A en comunidad",
-    "description": "Centro de Rehabilitación Aplicada en Comunidad. Rehabilitación personalizada según las necesidades y actividades diarias de cada persona.",
-    "keywords": "Fisioterapia, Fisioterapeuta, Osteopatía, Rehabilitación, Cali, Valle del Cauca, Buga",
-    "lang": "es",
-    "charset": "UTF-8",
-    "ldJson": {
-      "@context": "http://schema.org",
-      "@type": "Organization",
-      "name": "C.Re.A en comunidad",
-      "description": "Centro de Rehabilitación Aplicada en Comunidad. Rehabilitación personalizada según las necesidades y actividades diarias de cada persona.",
-      "url": "https://www.creaencomunidad.com/",
-      "logo": "./public/favicon.svg",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "email": "creaencomunidadcol@gmail.com",
-        "contactType": "Client Service"
-      },
-      "sameAs": [
-        "https://www.facebook.com/CREAencomunidad/",
-        "https://www.instagram.com/creaencomunidad",
-        "https://www.tiktok.com/@creaencomunidad"
-      ]
-    }
-  },
+	"meta": {
+		"title": "C.Re.A en comunidad",
+		"description": "Centro de Rehabilitación Aplicada en Comunidad. Rehabilitación personalizada según las necesidades y actividades diarias de cada persona.",
+		"keywords": "Fisioterapia, Fisioterapeuta, Osteopatía, Rehabilitación, Cali, Valle del Cauca, Buga",
+		"lang": "es",
+		"charset": "UTF-8",
+		"ldJson": {
+			"@context": "http://schema.org",
+			"@type": "Organization",
+			"name": "C.Re.A en comunidad",
+			"description": "Centro de Rehabilitación Aplicada en Comunidad. Rehabilitación personalizada según las necesidades y actividades diarias de cada persona.",
+			"url": "https://www.creaencomunidad.com/",
+			"logo": "./public/favicon.svg",
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"email": "creaencomunidadcol@gmail.com",
+				"contactType": "Client Service"
+			},
+			"sameAs": [
+				"https://www.facebook.com/CREAencomunidad/",
+				"https://www.instagram.com/creaencomunidad",
+				"https://www.tiktok.com/@creaencomunidad"
+			]
+		}
+	},
 
-  "headerData": {
-    "logoPath": "/BLogo.png",
-    "alt": "C.Re.A Logo",
-    "sections": [
-      { "label": "Quienes somos", "href": "#quienes-somos" },
-      { "label": "Servicios", "href": "#servicios" },
-      { "label": "Hablemos", "href": "#contacto" },
-      { "label": "Donde encontrarnos", "href": "#ubicacion" },
-      { "label": "Blog", "href": "https://blog.creaencomunidad.com" }
-    ]
-  },
+	"headerData": {
+		"logoPath": "/BLogo.png",
+		"alt": "C.Re.A Logo",
+		"sections": [
+			{ "label": "Quienes somos", "href": "#quienes-somos" },
+			{ "label": "Servicios", "href": "#servicios" },
+			{ "label": "Hablemos", "href": "#contacto" },
+			{ "label": "Donde encontrarnos", "href": "#ubicacion" },
+			{ "label": "Blog", "href": "https://blog.creaencomunidad.com" }
+		]
+	},
 
-  "heroData": {
-    "title": "Centro de Rehabilitacion Aplicada en Comunidad",
-    "subTitle": "Rehabilitación personalizada según las necesidades y actividades diarias de cada persona.",
-    "buttonText": "Quienes somos",
-    "buttonHref": "#quienes-somos"
-  },
+	"heroData": {
+		"title": "Centro de Rehabilitación Aplicada en Comunidad",
+		"subTitle": "Rehabilitación personalizada según las necesidades y actividades diarias de cada persona.",
+		"buttonText": "Quienes somos",
+		"buttonHref": "#quienes-somos",
+		"imgPath": "/assets/heroPerson.webp",
+		"imgAlt": "Hero image"
+	},
 
-  "servicesData": {
-    "title": "Servicios",
-    "services": [
-      {
-        "title": "Fisioterapia",
-        "imgPath": "/assets/ServiceFisio.webp"
-      },
-      {
-        "title": "Osteopatía",
-        "imgPath": "/assets/ServiceOsteo.webp"
-      },
-      {
-        "title": "Talleres grupales ",
-        "imgPath": "/assets/ServiceGroup.webp"
-      }
-    ]
-  },
+	"servicesData": {
+		"title": "Servicios",
+		"services": [
+			{
+				"title": "Fisioterapia",
+				"imgPath": "/assets/ServiceFisio.webp"
+			},
+			{
+				"title": "Osteopatía",
+				"imgPath": "/assets/ServiceOsteo.webp"
+			},
+			{
+				"title": "Talleres grupales ",
+				"imgPath": "/assets/ServiceGroup.webp"
+			}
+		]
+	},
 
-  "aboutData": {
-    "title": "Quienes somos.",
-    "description": "Somos C.Re.A en Comunidad, un Centro de Fisioterapia y Osteopatía. Nos enfocamos en la atención de modalidad Consulta Externa, ofreciendo servicios de fisioterapia y osteopatía.",
-    "imgPath": "/assets/aboutPerson.webp",
-    "buttonText": "¡Contáctanos!",
-    "buttonIcon": "WhatsappIcon",
-    "buttonHref": "https://api.whatsapp.com/send?phone=573167813601&text=Bendecido%20día,%20soy%20",
-    "aboutPieces": [
-      {
-        "title": "¿Osteopatía?",
-        "description": "Aunque el término osteopatía sugiere un enfoque en los huesos, esta especialidad de la terapia manual permite tratar una amplia variedad de lesiones y patologías, que incluyen desde fracturas y hernias discales hasta fibromialgia y secuelas de accidentes cerebrovasculares."
-      }
-    ]
-  },
+	"aboutData": {
+		"title": "Quienes somos.",
+		"description": "Somos C.Re.A en Comunidad, un Centro de Fisioterapia y Osteopatía. Nos enfocamos en la atención de modalidad Consulta Externa, ofreciendo servicios de fisioterapia y osteopatía.",
+		"imgPath": "/assets/aboutPerson.webp",
+		"buttonText": "¡Contáctanos!",
+		"buttonIcon": "WhatsappIcon",
+		"buttonHref": "https://api.whatsapp.com/send?phone=573167813601&text=Bendecido%20día,%20soy%20",
+		"aboutPieces": [
+			{
+				"title": "¿Osteopatía?",
+				"description": "Aunque el término osteopatía sugiere un enfoque en los huesos, esta especialidad de la terapia manual permite tratar una amplia variedad de lesiones y patologías, que incluyen desde fracturas y hernias discales hasta fibromialgia y secuelas de accidentes cerebrovasculares."
+			}
+		]
+	},
 
-  "teamData": {
-    "title": "Equipo C.Re.A",
-    "teamMembers": [
-      {
-        "name": "Alejandro Grisales Holguín",
-        "imgNamePath": "/assets/alejoName.webp",
-        "imgPath": "/assets/teamAlejo.webp",
-        "imageAlt": "Foto de Alejandro",
-        "position": "boss",
-        "vc": [
-          {
-            "achivement": "Doctorando en osteopatía",
-            "institution": "Escuela de osteopatía de Madrid sede México."
-          },
-          {
-            "achivement": "Master en osteopatía",
-            "institution": "Escuela de osteopatía de Madrid sede México."
-          },
-          {
-            "achivement": "Fisioterapeuta",
-            "institution": "IU Escuela Nacional del Deporte"
-          }
-        ]
-      }
-    ]
-  },
+	"teamData": {
+		"title": "Equipo C.Re.A",
+		"teamMembers": [
+			{
+				"name": "Alejandro Grisales Holguín",
+				"imgNamePath": "/assets/alejoName.webp",
+				"imgPath": "/assets/teamAlejo.webp",
+				"imageAlt": "Foto de Alejandro",
+				"position": "boss",
+				"vc": [
+					{
+						"achivement": "Doctorando en Osteopatía",
+						"institution": "Escuela de Osteopatía de Madrid sede México."
+					},
+					{
+						"achivement": "Máster en Osteopatía",
+						"institution": "Escuela de Osteopatía de Madrid sede México."
+					},
+					{
+						"achivement": "Fisioterapeuta",
+						"institution": "IU Escuela Nacional del Deporte"
+					}
+				]
+			}
+		]
+	},
 
-  "contactData": {
-    "title": "¡Hablemos un rato!",
-    "text": "Agenda una consulta con nuestros expertos y descubre cómo podemos ayudarte a mejorar tu bienestar y calidad de vida.",
-    "boldText": "Estamos aquí para ofrecerte el apoyo y tratamiento que necesitas.",
-    "schedule": [
-      { "day": "Lunes a viernes", "openHours": "8:00 am - 6:00 pm" },
-      { "day": "Sábados", "openHours": "8:00 am - 1:00 pm" }
-    ],
-    "socials": [
-      {
-        "socialIcon": "WhatsappIcon",
-        "label": "+57 316 781 3601",
-        "href": "https://api.whatsapp.com/send?phone=573167813601&text=Bendecido%20día,%20soy%20"
-      },
-      {
-        "socialIcon": "EmailIcon",
-        "label": "creaencomunidadcol@gmail.com",
-        "href": ""
-      }
-    ],
-    "contactProfile": {
-      "imgPath": "/assets/contactPerson.webp",
-      "socials": [
-        {
-          "socialIcon": "TiktokIcon",
-          "href": "https://www.tiktok.com/@creaencomunidad",
-          "label": ""
-        },
-        {
-          "socialIcon": "FacebookIcon",
-          "href": "https://www.facebook.com/CREAencomunidad/",
-          "label": ""
-        },
-        {
-          "socialIcon": "InstagramIcon",
-          "href": "https://www.instagram.com/creaencomunidad",
-          "label": ""
-        }
-      ],
-      "buttonText": "¡Siguenos en redes!",
-      "buttonHref": "https://linktr.ee/creaencomunidad?utm_source=qr_code"
-    }
-  },
+	"contactData": {
+		"title": "¡Hablemos un rato!",
+		"text": "Agenda una consulta con nuestros expertos y descubre cómo podemos ayudarte a mejorar tu bienestar y calidad de vida.",
+		"boldText": "Estamos aquí para ofrecerte el apoyo y tratamiento que necesitas.",
+		"schedule": [
+			{ "day": "Lunes a viernes", "openHours": "8:00 am - 6:00 pm" },
+			{ "day": "Sábados", "openHours": "8:00 am - 1:00 pm" }
+		],
+		"socials": [
+			{
+				"socialIcon": "WhatsappIcon",
+				"label": "+57 316 781 3601",
+				"href": "https://api.whatsapp.com/send?phone=573167813601&text=Bendecido%20día,%20soy%20"
+			},
+			{
+				"socialIcon": "EmailIcon",
+				"label": "creaencomunidadcol@gmail.com",
+				"href": ""
+			}
+		],
+		"contactProfile": {
+			"imgPath": "/assets/contactPerson.webp",
+			"socials": [
+				{
+					"socialIcon": "TiktokIcon",
+					"href": "https://www.tiktok.com/@creaencomunidad",
+					"label": ""
+				},
+				{
+					"socialIcon": "FacebookIcon",
+					"href": "https://www.facebook.com/CREAencomunidad/",
+					"label": ""
+				},
+				{
+					"socialIcon": "InstagramIcon",
+					"href": "https://www.instagram.com/creaencomunidad",
+					"label": ""
+				}
+			],
+			"buttonText": "¡Síguenos en redes!",
+			"buttonHref": "https://linktr.ee/creaencomunidad?utm_source=qr_code"
+		}
+	},
 
-  "locationData": {
-    "title": "¡Encuentra tu sede más cercana!",
-    "locations": [
-      {
-        "city": "Buga",
-        "address": "Carrera 12 # 4-58",
-        "addressExtra": "",
-        "iframeLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.5901414834543!2d-76.30294812421377!3d3.8976497960761254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e39e643d751a5a5%3A0x4ae516c2f80f49a2!2sCra.%2012%20%234-58%2C%20Guadalajara%20de%20Buga%2C%20Valle%20del%20Cauca!5e0!3m2!1ses-419!2sco!4v1719604995777!5m2!1ses-419!2sco",
-        "urlLocation": "https://www.google.com/maps/place/Cra.+12+%234-58,+Guadalajara+de+Buga,+Valle+del+Cauca/@3.89765,-76.300373,15z/data=!4m6!3m5!1s0x8e39e643d751a5a5:0x4ae516c2f80f49a2!8m2!3d3.8976498!4d-76.3003732!16s%2Fg%2F11fpbkygw_?hl=es-419&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"
-      },
-      {
-        "city": "Cali",
-        "address": "Carrera 29a # 9-51",
-        "addressExtra": "Champagnat",
-        "iframeLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.6689449540554!2d-76.53785252421568!3d3.4305202965439947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a690e1dfbc6f%3A0xf93da59528ad74c!2sCra.%2029a%20%239-51%2C%20La%20Alameda%2C%20Cali%2C%20Valle%20del%20Cauca!5e0!3m2!1ses-419!2sco!4v1719604864027!5m2!1ses-419!2sco",
-        "urlLocation": "https://www.google.com/maps/place/Cra.+29a+%239-51,+La+Alameda,+Cali,+Valle+del+Cauca/@3.43052,-76.535278,15z/data=!4m6!3m5!1s0x8e30a690e1dfbc6f:0xf93da59528ad74c!8m2!3d3.4305203!4d-76.5352776!16s%2Fg%2F11tt6d0kcn?hl=es-419&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"
-      }
-    ]
-  },
+	"locationData": {
+		"title": "¡Encuentra tu sede más cercana!",
+		"locations": [
+			{
+				"city": "Buga",
+				"address": "Carrera 12 # 4-58",
+				"addressExtra": "",
+				"iframeLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.5901414834543!2d-76.30294812421377!3d3.8976497960761254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e39e643d751a5a5%3A0x4ae516c2f80f49a2!2sCra.%2012%20%234-58%2C%20Guadalajara%20de%20Buga%2C%20Valle%20del%20Cauca!5e0!3m2!1ses-419!2sco!4v1719604995777!5m2!1ses-419!2sco",
+				"urlLocation": "https://www.google.com/maps/place/Cra.+12+%234-58,+Guadalajara+de+Buga,+Valle+del+Cauca/@3.89765,-76.300373,15z/data=!4m6!3m5!1s0x8e39e643d751a5a5:0x4ae516c2f80f49a2!8m2!3d3.8976498!4d-76.3003732!16s%2Fg%2F11fpbkygw_?hl=es-419&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"
+			},
+			{
+				"city": "Cali",
+				"address": "Carrera 29a # 9-51",
+				"addressExtra": "Champagnat",
+				"iframeLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.6689449540554!2d-76.53785252421568!3d3.4305202965439947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a690e1dfbc6f%3A0xf93da59528ad74c!2sCra.%2029a%20%239-51%2C%20La%20Alameda%2C%20Cali%2C%20Valle%20del%20Cauca!5e0!3m2!1ses-419!2sco!4v1719604864027!5m2!1ses-419!2sco",
+				"urlLocation": "https://www.google.com/maps/place/Cra.+29a+%239-51,+La+Alameda,+Cali,+Valle+del+Cauca/@3.43052,-76.535278,15z/data=!4m6!3m5!1s0x8e30a690e1dfbc6f:0xf93da59528ad74c!8m2!3d3.4305203!4d-76.5352776!16s%2Fg%2F11tt6d0kcn?hl=es-419&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"
+			}
+		]
+	},
 
-  "footerData": {
-    "socials": [
-      {
-        "alt": "WhatsappIcon",
-        "href": "https://api.whatsapp.com/send?phone=573167813601&text=Bendecido%20día,%20soy%20",
-        "label": "+57 3167813601"
-      },
-      {
-        "alt": "InstagramIcon",
-        "href": "https://www.instagram.com/creaencomunidad",
-        "label": "creaencomunidad"
-      },
-      {
-        "alt": "TiktokIcon",
-        "href": "https://www.tiktok.com/@creaencomunidad",
-        "label": "creaencomunidad"
-      },
-      {
-        "alt": "FacebookIcon",
-        "href": "https://www.facebook.com/CREAencomunidad/",
-        "label": "creaencomunidad"
-      }
-    ]
-  }
+	"footerData": {
+		"socials": [
+			{
+				"alt": "WhatsappIcon",
+				"href": "https://api.whatsapp.com/send?phone=573167813601&text=Bendecido%20día,%20soy%20",
+				"label": "+57 3167813601"
+			},
+			{
+				"alt": "InstagramIcon",
+				"href": "https://www.instagram.com/creaencomunidad",
+				"label": "creaencomunidad"
+			},
+			{
+				"alt": "TiktokIcon",
+				"href": "https://www.tiktok.com/@creaencomunidad",
+				"label": "creaencomunidad"
+			},
+			{
+				"alt": "FacebookIcon",
+				"href": "https://www.facebook.com/CREAencomunidad/",
+				"label": "creaencomunidad"
+			}
+		]
+	}
 }
